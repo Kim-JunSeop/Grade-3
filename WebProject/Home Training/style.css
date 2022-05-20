@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "NEXON Lv2 Gothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "NEXON Lv2 Gothic Bold";
+  background: #ececec;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+/*header 부분*/
+
+.container .header {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: skyblue;
+  padding-left: 200px;
+}
+.container .header h1 a {
+  text-decoration: none;
+  color: white;
+}
+.container .header a:hover {
+  color: black;
+}
+
+/*nav 부분*/
+
+.container .nav {
+  padding-right: 200px;
+}
+.container .nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.container .nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.container .nav ul li a:hover {
+  color: black;
+}
+
+/*action 부분*/
+
+.container .action {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .action h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.container .action button {
+  background: none;
+  border: 2px, solid black;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  outline: 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.container .action button:hover {
+  background-color: rebeccapurple;
+}
+
+/* mov*/
+
+.mov {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+/*Review_text1 부분*/
+
+.Review {
+  width: 100%;
+  height: 400px;
+  background-color: rebeccapurple;
+}
+.Review > h1 {
+  padding-top: 50px;
+  color: black;
+  width: 1000px;
+  margin: 0 auto;
+}
+.img1 {
+  width: 1000px;
+  margin: 0 auto;
+  height: 232px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img1 > p {
+  display: flex;
+  height: 230px;
+  width: 1000px;
+  align-items: center;
+  font-size: 25px;
+}
+.img1 > #lottiebox1 {
+  width: 100%;
+  height: 100%;
+}
+
+.img1 > #lottie1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* Feature1 부분*/
+
+.Feature1 {
+  width: 100%;
+  height: 500px;
+  background-color: #f0f8ff;
+}
+.Feature1 > h1 {
+  padding-top: 50px;
+  color: black;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+.img2 {
+  width: 1000px;
+  margin: 0 auto;
+  height: 285px;
+  display: flex;
+  justify-content: space-between;
+}
+.Feature1_h3 {
+  width: 500px;
+}
+.Feature1_h3 > h3 {
+  height: 100px;
+  width: 750px;
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+}
+.img2 > p {
+  display: flex;
+  height: 285px;
+  width: 750px;
+  align-items: center;
+}
+.container .Feature1 button {
+  background: none;
+  border: 2px, solid black;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  outline: 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-align: center;
+}
+.container .Feature1 button:hover {
+  background-color: rebeccapurple;
+}
+
+/*Feature2 부분*/
+
+.Feature2 {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+}
+.Feature2 > h1 {
+  padding-top: 50px;
+  color: black;
+  width: 60px;
+  margin: 0 auto;
+  text-align: right;
+}
+.img3 {
+  width: 1000px;
+  margin: 0 auto;
+  height: 285px;
+  display: flex;
+  justify-content: space-between;
+}
+.Feature1 > h1 {
+  padding-top: 50px;
+  color: black;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+.img3 > p {
+  display: flex;
+  height: 285px;
+  width: 300px;
+  align-items: center;
+}
+.img2 > #lottiebox2 {
+  width: 1000px;
+  height: 100%;
+}
+.img2 > #lottie2 {
+  width: 100%;
+  height: 100%;
+  size: 500px;
+}
+
+/*Feature3 부분*/
+
+.Feature3 {
+  width: 100%;
+  height: 500px;
+  background-color: #f0f8ff;
+}
+.Feature3 > h1 {
+  padding-top: 50px;
+  color: black;
+  width: 1000px;
+  margin: 0 auto;
+}
+.img4 {
+  width: 1000px;
+  margin: 0 auto;
+  height: 285px;
+  display: flex;
+  justify-content: space-between;
+}
+.img4 > p {
+  display: flex;
+  height: 285px;
+  width: 300px;
+  align-items: center;
+}
+
+/* FAQ 부분*/
+
+.FAQ {
+  width: 100%;
+  height: 700px;
+  background-color: white;
+}
+.FAQ > h1 {
+  padding-top: 50px;
+  color: black;
+  width: 1000px;
+  margin: 0 auto;
+}
+.img5 > p {
+  display: flex;
+  height: 230px;
+  width: 1000px;
+  align-items: center;
+  font-size: 25px;
+}
+
+/* End 부분*/
+.End {
+  width: 100%;
+  height: 300px;
+  background-color: skyblue;
+  margin: 0 auto;
+}
+.End > h3 {
+  padding-top: 50px;
+  color: black;
+  width: 1000px;
+  margin: 0 auto;
+}
+.img6 > p {
+  display: flex;
+  height: 230px;
+  width: 1000px;
+  align-items: center;
+  font-size: 25px;
+}

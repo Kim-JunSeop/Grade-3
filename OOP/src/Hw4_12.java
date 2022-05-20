@@ -31,6 +31,7 @@ class Seat {
         return false;
     }
 }
+
 class Reservation {
     Scanner sc = new Scanner(System.in);
     private Seat s[];

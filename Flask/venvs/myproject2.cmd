@@ -1,5 +1,5 @@
 @echo off
-@cd c:/projects/myproject
+@cd C:\Users\KIMJUNSEOP\Grade-3\Flask\projects\myproject
 @set FLASK_APP=pybo
 @set FLASK_ENV=development
-@c:/venvs/myproject/scripts/activate
+@C:\Users\KIMJUNSEOP\Grade-3\Flask\venvs\myproject\Scripts

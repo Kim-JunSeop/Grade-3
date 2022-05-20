@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>운동의 민족</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="slide.js"></script>
   </head>
   <body>
     <div class="container">
@@ -28,98 +29,153 @@
 
       <div class="mov">
         <video width="800px" height="320px" controls autoplay muted loop>
-          <source src="home training.mp4" type="video/mp4" />
-          
+          <source src="intro.mp4" type="video/mp4" />
         </video>
       </div>
-      <div class="Review">
-        <h1>Review</h1>
-        <div class="img1">
-          <div id="lottiebox1">
-            <div id="lottie1"></div>
-            <script src="js/lottie.min.js"></script>
-            <script src="js/custom1.js"></script>
-         </div>
-          <p>
-            홈트레이닝으로 몸 관리하는 편인데… 매번 무슨 운동을 할지 고르는 것도 일이었는데, 나에게 적합한 운동을 추천해주니 꽤 편한 것 같아요.
-            15분이란 시간이 이렇게 길었나..싶은ㅎㅎ 이게 운동이 되겠나 싶었는데 생각보다 땀이 많이 나는데요? 짧고 굵게 운동하기 좋네요.
-          </p>
-        </div>
-      </div>
-      <div class="Feature1">
-        <h1>Feature1</h1>
-        <div class="img2">
-          <div class="Feature1_h3">
-            <h3>나의 운동기록을 한눈에!
-              매일매일 운동 기록하기</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-                aliquam sint quo blanditiis quos nihil eveniet dolore, libero alias
-                fugit ipsum quod nisi pariatur? Laborum officia quas magnam. Sint,
-                labore?
-              </p>
+    </div>
+    <div id="con">
+      <div class="slide_wrap">
+        <div class="slide_box">
+          <div class="slide_list clearfix">
+            <div class="slide_content slide01">
+              <h1 class="slide_content_title">Review</h1>
+              <div class="img">
+                <img src="images/img3.png" alt="1" />
+
+                <p>
+                  홈트레이닝으로 몸 관리하는 편인데… 매번 무슨 운동을 할지
+                  고르는 것도 일이었는데, 나에게 적합한 운동을 추천해주니 꽤
+                  편한 것 같아요. 15분이란 시간이 이렇게 길었나..싶은ㅎㅎ 이게
+                  운동이 되겠나 싶었는데 생각보다 땀이 많이 나는데요? 짧고 굵게
+                  운동하기 좋네요.
+                </p>
+              </div>
+            </div>
+            <div class="slide_content slide02">
+              <h1 class="slide_content_title">Review</h1>
+              <div class="img">
+                <img src="images/img2.png" alt="1" />
+                <p>
+                  코로나19 때문에 다니던 헬스장에 못가는 날이 많아지면서
+                  비대면으로 홈트레이닝 할 수 있는 서비스들을 많이 찾아
+                  다녔는데ㅎㅎ 운동의 민족덕분에 인공지능이 보여 주는 제 뼈다귀?
+                  모습도 신기하고, 진짜 틀린 자세를 짚어주니까 개인 트레이너
+                  역할을 톡톡히 하네요!
+                </p>
+              </div>
+            </div>
+            <div class="slide_content slide03">
+              <h1 class="slide_content_title">Review</h1>
+              <div class="img">
+                <img src="images/img1.png" alt="1" />
+                <p>
+                  시간과 장소의 영향을 받지 않고, 도구의 사용 없이도 운동 효과를
+                  빠르게 확인할 수 있는데요. 조깅 대신 집에서 할 수 있는 몇 가지
+                  동작을 통해 칼로리를 태우면서 체지방을 분해하고, 몸매에 탄력을
+                  더할 수 있습니다. 한 달 동안 꾸준히 반복하면서 집에서 하면
+                  좋은 운동을 확인하세요.
+                </p>
+              </div>
+            </div>
           </div>
-          
-          <div id="lottiebox2">
-            <div id="lottie2"></div>
-            <script src="js/lottie.min.js"></script>
-            <script src="js/custom2.js"></script>
-         </div>
+          <!-- // .slide_list -->
+        </div>
+        <!-- // .slide_box -->
+        <div class="slide_btn_box">
+          <button type="button" class="slide_btn_prev">Prev</button>
+          <button type="button" class="slide_btn_next">Next</button>
+        </div>
+        <!-- // .slide_btn_box -->
+        <ul class="slide_pagination"></ul>
+        <!-- // .slide_pagination -->
+      </div>
+      <!-- // .slide_wrap -->
+    </div>
+    <!-- // .container -->
+
+    <div class="Feature1">
+      <h1>Feature1</h1>
+      <div class="img2">
+        <div class="Feature1_h3">
+          <h3>바쁜 현대사회, 쉽고 간편하게 1:1 홈트레이닝 즐기기!</h3>
+          <p>
+            요가, 필라테스, 러닝... 세상에는 너무 많은 운동이 있고 '나한테
+            필요한 운동이 뭘까?' 고민하기에 우리는 너무 바쁘죠! 수 백 가지 동작,
+            300만장 이상의 이미지를 학습한 AI가 당신만을 위한 맨몸 운동
+            프로그램과 올바른 운동 자세를 알려줍니다. 운동은 AI에게 맡기고,
+            당신은 흐르는 땀을 닦기만 하세요.
+          </p>
+        </div>
+        <div id="lottiebox2">
+          <div id="lottie2"></div>
+          <script src="js/lottie.min.js"></script>
+          <script src="js/custom2.js"></script>
         </div>
       </div>
-      <div class="Feature2">
-        <h1>Feature2</h1>
-        <div class="img3">
-          
+    </div>
+    <div class="Feature2">
+      <h1>Feature2</h1>
+      <div class="img3">
+        <div id="lottiebox3">
+          <div id="lottie3"></div>
+          <script src="js/lottie.min.js"></script>
+          <script src="js/custom3.js"></script>
+        </div>
+        <div class="Feature2_h3">
+          <h3>나의 운동기록을 한눈에! 매일매일 운동 기록하기</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            corrupti sint qui labore similique nostrum esse non cumque eligendi
-            asperiores sed hic quia pariatur doloribus consequatur quas,
-            repudiandae dolorum excepturi?
+            홈트를 하는 사람들에겐 아주 유용하고, 운동 일지를 일일이 메모장이나
+            노트에 기록하지 않아도 간편하게 루틴을 짜고 수정하는것이 편리하다.
+            운동 시간도 기록가능하고 달 단위로 얼마만큼의 강도와 무게, 시간,
+            갯수로 운동했는지 한눈에 그래프로 알 수 있어서 보기 쉽다.
           </p>
         </div>
       </div>
-      <div class="Feature3">
-        <h1>Feature3</h1>
-        <div class="img4">
+    </div>
+    <div class="Feature3">
+      <h1>Feature3</h1>
+      <div class="img4">
+        <div class="Feature3_h3">
+          <h3>
+            함께하면 즐거움이 100배 ! 지역 커뮤니티 & 랭킹으로 함께 즐겨요
+          </h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-            aliquam sint quo blanditiis quos nihil eveniet dolore, libero alias
-            fugit ipsum quod nisi pariatur? Laborum officia quas magnam. Sint,
-            labore?
-            <div class="button3">
-        </div>
+            요가, 필라테스, 러닝... 세상에는 너무 많은 운동이 있고 '나한테
+            필요한 운동이 뭘까?' 고민하기에 우리는 너무 바쁘죠! 수 백 가지 동작,
+            300만장 이상의 이미지를 학습한 AI가 당신만을 위한 맨몸 운동
+            프로그램과 올바른 운동 자세를 알려줍니다. 운동은 AI에게 맡기고,
+            당신은 흐르는 땀을 닦기만 하세요.
           </p>
-          <img
-            src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2018/08/urbanbrush-20180823110023875635-548x580.png"
-            alt="따봉"
-            width="300"
-          />
+        </div>
+        <div id="lottiebox4">
+          <div id="lottie4"></div>
+          <script src="js/lottie.min.js"></script>
+          <script src="js/custom4.js"></script>
         </div>
       </div>
-      <div class="FAQ">
-        <h1>FAQ</h1>
-        <h1>자주 묻는 질문</h1>
-        <div class="img5">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-            aliquam sint quo blanditiis quos nihil eveniet dolore, libero alias
-            fugit ipsum quod nisi pariatur? Laborum officia quas magnam. Sint,
-            labore?
-            
-        </div>
-          </p>
-        </div>
-        <div class="End">
-          <h3>운동의 민족</h3>
-          <div class="img6">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              aliquam sint quo blanditiis quos nihil eveniet dolore, libero alias
-              fugit ipsum quod nisi pariatur? Laborum officia quas magnam. Sint,
-              labore?
-          </div>
-        </div>
+    </div>
+    <div class="FAQ">
+      <h1>FAQ</h1>
+      <h1>자주 묻는 질문</h1>
+      <div class="img5">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+          aliquam sint quo blanditiis quos nihil eveniet dolore, libero alias
+          fugit ipsum quod nisi pariatur? Laborum officia quas magnam. Sint,
+          labore?
+        </p>
+      </div>
+    </div>
+    <div class="End">
+      <h3>운동의 민족</h3>
+      <div class="img6">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+          aliquam sint quo blanditiis quos nihil eveniet dolore, libero alias
+          fugit ipsum quod nisi pariatur? Laborum officia quas magnam. Sint,
+          labore?
+        </p>
+      </div>
     </div>
   </body>
 </html>

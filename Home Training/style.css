@@ -7,7 +7,7 @@
 }
 body {
   font-family: "NEXON Lv2 Gothic Bold";
-  background: #ececec;
+  background: white;
 }
 * {
   margin: 0;
@@ -90,49 +90,66 @@ body {
 /* mov*/
 
 .mov {
-  height: 400px;
+  height: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
 }
 
-/*Review_text1 부분*/
+/*Review1부분*/
 
-.Review {
-  width: 100%;
+.slide_content_slide01 {
+  width: 3000px;
   height: 400px;
-  background-color: rebeccapurple;
+  background-color: #f0f8ff;
 }
-.Review > h1 {
+
+.slide_content_title {
   padding-top: 50px;
   color: black;
   width: 1000px;
   margin: 0 auto;
+  display: flex;
+  padding-left: 30px;
 }
-.img1 {
+
+/*Review2 부분*/
+
+.slide_content_slide02 {
+  width: 3000px;
+  height: 400px;
+}
+.h1 {
+  padding-top: 50px;
+  color: black;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 30px;
+}
+/*Review3 부분*/
+
+.slide_content_slide03 {
+  width: 3000px;
+  height: 400px;
+}
+
+.img {
   width: 1000px;
   margin: 0 auto;
   height: 232px;
   display: flex;
   justify-content: space-between;
+  padding-left: 30px;
 }
-
-.img1 > p {
+.img > p {
   display: flex;
-  height: 230px;
+  height: 265px;
   width: 1000px;
   align-items: center;
   font-size: 25px;
-}
-.img1 > #lottiebox1 {
-  width: 100%;
-  height: 100%;
-}
-
-.img1 > #lottie1 {
-  width: 100%;
-  height: 100%;
+  padding-right: 30px;
 }
 
 /* Feature1 부분*/
@@ -161,16 +178,33 @@ body {
 }
 .Feature1_h3 > h3 {
   height: 100px;
-  width: 750px;
+  width: 375px;
   align-items: center;
   display: flex;
   font-size: 30px;
 }
+.Feature1_h3 > p {
+  height: 100px;
+  width: 365px;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+}
+
 .img2 > p {
   display: flex;
   height: 285px;
   width: 750px;
   align-items: center;
+}
+.img2 > #lottiebox2 {
+  width: 1000px;
+  height: 100%;
+}
+.img2 > #lottie2 {
+  width: 100%;
+  height: 100%;
+  size: 500px;
 }
 .container .Feature1 button {
   background: none;
@@ -198,7 +232,7 @@ body {
 .Feature2 > h1 {
   padding-top: 50px;
   color: black;
-  width: 60px;
+  width: 1000px;
   margin: 0 auto;
   text-align: right;
 }
@@ -216,17 +250,25 @@ body {
   margin: 0 auto;
   display: flex;
 }
-.img3 > p {
-  display: flex;
-  height: 285px;
-  width: 300px;
+.Feature2_h3 > h3 {
+  height: 100px;
+  width: 580px;
   align-items: center;
+  display: flex;
+  font-size: 30px;
 }
-.img2 > #lottiebox2 {
+.Feature2_h3 > p {
+  display: flex;
+  height: 107px;
+  width: 577px;
+  align-items: center;
+  font-size: 17px;
+}
+.img3 > #lottiebox3 {
   width: 1000px;
   height: 100%;
 }
-.img2 > #lottie2 {
+.img3 > #lottie3 {
   width: 100%;
   height: 100%;
   size: 500px;
@@ -244,6 +286,7 @@ body {
   color: black;
   width: 1000px;
   margin: 0 auto;
+  display: flex;
 }
 .img4 {
   width: 1000px;
@@ -252,11 +295,53 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.Feature3_h3 {
+  width: 500px;
+}
+.Feature3_h3 > h3 {
+  height: 120px;
+  width: 365px;
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+}
+.Feature3_h3 > p {
+  height: 150px;
+  width: 365px;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+}
+
 .img4 > p {
   display: flex;
   height: 285px;
-  width: 300px;
+  width: 750px;
   align-items: center;
+}
+.img4 > #lottiebox4 {
+  width: 1000px;
+  height: 100%;
+}
+.img4 > #lottie4 {
+  width: 100%;
+  height: 100%;
+  size: 500px;
+}
+.container .Feature1 button {
+  background: none;
+  border: 2px, solid black;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  outline: 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-align: center;
+}
+.container .Feature1 button:hover {
+  background-color: rebeccapurple;
 }
 
 /* FAQ 부분*/
@@ -300,3 +385,123 @@ body {
   align-items: center;
   font-size: 25px;
 }
+
+/* slide */
+
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+.title {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+}
+.link,
+.link:visited {
+  display: inline-block;
+  margin: 20px 0;
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link:hover,
+.link:focus {
+  color: #9fd6c2;
+}
+/* container - body */
+
+#con {
+  width: 1000px;
+  margin: auto;
+}
+.slide_wrap {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.slide_box {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+.slide_content {
+  display: table;
+  float: left;
+  width: 1000px;
+  height: 400px;
+}
+
+.slide01 {
+  background: #ddbdff;
+}
+.slide02 {
+  background: #9fd6c2;
+}
+.slide03 {
+  background: #abe2f7;
+}
+
+.slide_btn_box > button {
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  color: #999;
+  background: none;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.slide_btn_box > .slide_btn_prev {
+  left: -100px;
+}
+.slide_btn_box > .slide_btn_next {
+  right: -100px;
+}
+.slide_pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-50%);
+}
+.slide_pagination .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #ddd;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.slide_pagination .dot.dot_active {
+  background: #333;
+}
+.slide_pagination .dot a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* slide */

@@ -1,3 +1,3 @@
 @echo off
-@cd c:/projects/myproject
-@c:/venvs/myproject/scripts/activate
+@cd C:\Users\KIMJUNSEOP\Grade-3\Flask\projects\myproject
+@C:\Users\KIMJUNSEOP\Grade-3\Flask\venvs\myproject\Scripts

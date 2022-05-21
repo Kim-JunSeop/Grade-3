@@ -11,20 +11,20 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1><a href="#">운동의 민족</a></h1>
+        <h1><a href="#link_header">운동의 민족</a></h1>
         <div class="nav">
           <ul>
-            <li><a href="#">Review</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#link_Review">Review</a></li>
+            <li><a href="#link_Feature">Feature</a></li>
+            <li><a href="#link_FAQ">FAQ</a></li>
             <li><a href="#">로그인</a></li>
             <li><a href="#">회원가입</a></li>
           </ul>
         </div>
       </div>
-      <div class="action">
+      <div class="action" id="link_header">
         <h2>Ready, Action,<br />Exercise</h2>
-        <button>시작하기</button>
+        <button><b>시작하기</b></button>
       </div>
 
       <div class="mov">
@@ -38,7 +38,7 @@
         <div class="slide_box">
           <div class="slide_list clearfix">
             <div class="slide_content slide01">
-              <h1 class="slide_content_title">Review</h1>
+              <h1 class="slide_content_title" id="link_Review">Review</h1>
               <div class="img">
                 <img src="images/img3.png" alt="1" />
 
@@ -93,7 +93,7 @@
     </div>
     <!-- // .container -->
 
-    <div class="Feature1">
+    <div class="Feature1" id="link_Feature">
       <h1>Feature1</h1>
       <div class="img2">
         <div class="Feature1_h3">
@@ -105,6 +105,7 @@
             프로그램과 올바른 운동 자세를 알려줍니다. 운동은 AI에게 맡기고,
             당신은 흐르는 땀을 닦기만 하세요.
           </p>
+          <button><b>시작하기</b></button>
         </div>
         <div id="lottiebox2">
           <div id="lottie2"></div>
@@ -113,6 +114,7 @@
         </div>
       </div>
     </div>
+
     <div class="Feature2">
       <h1>Feature2</h1>
       <div class="img3">
@@ -129,9 +131,11 @@
             운동 시간도 기록가능하고 달 단위로 얼마만큼의 강도와 무게, 시간,
             갯수로 운동했는지 한눈에 그래프로 알 수 있어서 보기 쉽다.
           </p>
+          <button>시작하기</button>
         </div>
       </div>
     </div>
+
     <div class="Feature3">
       <h1>Feature3</h1>
       <div class="img4">
@@ -146,6 +150,7 @@
             프로그램과 올바른 운동 자세를 알려줍니다. 운동은 AI에게 맡기고,
             당신은 흐르는 땀을 닦기만 하세요.
           </p>
+          <button>시작하기</button>
         </div>
         <div id="lottiebox4">
           <div id="lottie4"></div>
@@ -154,26 +159,47 @@
         </div>
       </div>
     </div>
-    <div class="FAQ">
+    <div class="FAQ" id="link_FAQ">
       <h1>FAQ</h1>
-      <h1>자주 묻는 질문</h1>
-      <div class="img5">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-          aliquam sint quo blanditiis quos nihil eveniet dolore, libero alias
-          fugit ipsum quod nisi pariatur? Laborum officia quas magnam. Sint,
-          labore?
-        </p>
-      </div>
+
+      <ul class="block">
+        <li>
+          <div class="contents1_bold">
+            <h1>Q. 카메라가 내 모습을 저장하나요?</h1>
+            <p>
+              안심하세요! 카메라는 사용자의 정보를 저장하지 않습니다. 사용자가
+              원하는 경우에만 자신의 모습을 녹화해 다시보기 할 수 있습니다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="contents1_bold">
+            <h1>Q. 모바일에서는 안되나요?</h1>
+            <p>
+              최적의 운동 경험을 제공하기 위해 웹 서비스로 먼저 출시되었습니다.
+              모바일에서도 곧 만나실 수 있으니 조금만 기다려주세요!
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="contents1_bold">
+            <h1>Q. 카메라가 꼭 필요한가요?</h1>
+            <p>
+              100% 즐기기 위해서는 '노트북' 또는 '데스크탑 + 외장카메라'가
+              필요해요! 카메라를 통해 운동동작을 분석하기 때문이에요!
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
+
     <div class="End">
       <h3>운동의 민족</h3>
       <div class="img6">
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-          aliquam sint quo blanditiis quos nihil eveniet dolore, libero alias
-          fugit ipsum quod nisi pariatur? Laborum officia quas magnam. Sint,
-          labore?
+          (주)숭실대학교 글로벌미디어학부 웹프로그래밍 <br />고민호 김준섭
+          윤재영 한상민 <br />
+          06978 서울특별시 동작구 상도로 369 508호 <br />등록번호 : 241-86-016
         </p>
       </div>
     </div>

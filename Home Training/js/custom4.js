@@ -1,9 +1,9 @@
 var params = {
   container: document.querySelector("#lottie4"),
-  renderer: "canvas",
+  renderer: "svg",
   loop: true,
   autoplay: true,
-  path: "data/Feature3.json",
+  path: "data/loop-ex98.json",
 };
 
 var anim;

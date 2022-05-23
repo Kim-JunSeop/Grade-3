@@ -5,26 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>운동의 민족</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="slide.js"></script>
+    <link rel="stylesheet" href="style/index.css" />
+    <script defer src="js/slide.js"></script>
+    <script defer src="js/txt1.js"></script>
   </head>
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <div class="container">
       <div class="header">
         <h1><a href="#link_header">운동의 민족</a></h1>
         <div class="nav">
           <ul>
             <li><a href="#link_Review">Review</a></li>
-            <li><a href="#link_Feature">Feature</a></li>
+            <li><a href="#link_Feature1">Feature</a></li>
             <li><a href="#link_FAQ">FAQ</a></li>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
+            <li><a href="login.html" target="_self">로그인</a></li>
+            <li><a href="newid.html" target="_self">회원가입</a></li>
           </ul>
         </div>
       </div>
       <div class="action" id="link_header">
         <h2>Ready, Action,<br />Exercise</h2>
-        <button><b>시작하기</b></button>
+        <button>
+          <a href="login.html" target="_self"><b>시작하기</b></a>
+        </button>
       </div>
 
       <div class="mov">
@@ -32,13 +37,14 @@
           <source src="intro.mp4" type="video/mp4" />
         </video>
       </div>
+      <div id="link_Review"></div>
     </div>
     <div id="con">
       <div class="slide_wrap">
         <div class="slide_box">
           <div class="slide_list clearfix">
             <div class="slide_content slide01">
-              <h1 class="slide_content_title" id="link_Review">Review</h1>
+              <h1 class="slide_content_title">Review</h1>
               <div class="img">
                 <img src="images/img3.png" alt="1" />
 
@@ -86,17 +92,17 @@
           <button type="button" class="slide_btn_next">Next</button>
         </div>
         <!-- // .slide_btn_box -->
-        <ul class="slide_pagination"></ul>
+        <ul class="slide_pagination" id="link_Feature1"></ul>
         <!-- // .slide_pagination -->
       </div>
       <!-- // .slide_wrap -->
     </div>
     <!-- // .container -->
 
-    <div class="Feature1" id="link_Feature">
+    <div class="jhs-appear">
       <h1>Feature1</h1>
       <div class="img2">
-        <div class="Feature1_h3">
+        <div class="txt-ani">
           <h3>바쁜 현대사회, 쉽고 간편하게 1:1 홈트레이닝 즐기기!</h3>
           <p>
             요가, 필라테스, 러닝... 세상에는 너무 많은 운동이 있고 '나한테
@@ -105,7 +111,6 @@
             프로그램과 올바른 운동 자세를 알려줍니다. 운동은 AI에게 맡기고,
             당신은 흐르는 땀을 닦기만 하세요.
           </p>
-          <button><b>시작하기</b></button>
         </div>
         <div id="lottiebox2">
           <div id="lottie2"></div>
@@ -131,15 +136,14 @@
             운동 시간도 기록가능하고 달 단위로 얼마만큼의 강도와 무게, 시간,
             갯수로 운동했는지 한눈에 그래프로 알 수 있어서 보기 쉽다.
           </p>
-          <button>시작하기</button>
         </div>
       </div>
     </div>
 
-    <div class="Feature3">
+    <div class="jhs-appear">
       <h1>Feature3</h1>
-      <div class="img4">
-        <div class="Feature3_h3">
+      <div class="img2">
+        <div class="txt-ani">
           <h3>
             함께하면 즐거움이 100배 ! 지역 커뮤니티 & 랭킹으로 함께 즐겨요
           </h3>
@@ -150,7 +154,6 @@
             프로그램과 올바른 운동 자세를 알려줍니다. 운동은 AI에게 맡기고,
             당신은 흐르는 땀을 닦기만 하세요.
           </p>
-          <button>시작하기</button>
         </div>
         <div id="lottiebox4">
           <div id="lottie4"></div>

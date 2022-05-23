@@ -3,7 +3,7 @@ var scrollTop;
 // delay 초 후에 active 시킨다.
 function JhsAppear__setTimeActive($node) {
   var delay = $node.attr("data-jhs-appear-delay");
-  delay = delay ? parseInt(delay) : 0;
+  delay = delay ? parseInt(delay) : 1;
 
   setTimeout(function () {
     if ($node.hasClass("jhs-appear-found")) {
@@ -73,7 +73,7 @@ function JhsAppear__init() {
       } else {
         if (
           $node.hasClass("jhs-appear-found") &&
-          $node.hasClass("jhs-appear-irreversible") === false
+          $node.hasClass("jhs-appear") === false
         ) {
           $node.removeClass("jhs-appear-found");
           $node.removeClass("jhs-appear-active");

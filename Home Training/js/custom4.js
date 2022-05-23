@@ -3,7 +3,7 @@ var params = {
   renderer: "canvas",
   loop: true,
   autoplay: true,
-  path: "data/partner.json",
+  path: "data/Feature3.json",
 };
 
 var anim;

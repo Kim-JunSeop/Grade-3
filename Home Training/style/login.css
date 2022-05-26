@@ -38,27 +38,13 @@ body {
 
 .box input {
   padding: 10px 0;
-  margin-bottom: 30px;
-}
-
-.box textarea {
-  height: 80px;
-  padding: 10px 0;
-  margin-bottom: 40px;
-}
-
-.box input,
-.box textarea {
   width: 320px;
+  margin-bottom: 30px;
   box-sizing: border-box;
   box-shadow: none;
   outline: none;
   border: none;
   border-bottom: 2px solid #999;
-}
-
-.box textarea {
-  margin-bottom: 20px;
 }
 
 .box input[type="submit"] {
@@ -84,9 +70,7 @@ body {
 }
 
 .box input:focus ~ label,
-.box input:valid ~ label,
-.box textarea:focus ~ label,
-.box textarea:valid ~ label {
+.box input:valid ~ label {
   top: -12px;
   left: 0;
   color: skyblue;
@@ -95,8 +79,6 @@ body {
 }
 
 .box input:focus,
-.box input:valid,
-.box textarea:focus,
-.box textarea:valid {
+.box input:valid {
   border-bottom: 2px solid skyblue;
 }

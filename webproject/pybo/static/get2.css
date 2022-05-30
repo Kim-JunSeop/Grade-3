@@ -69,10 +69,13 @@ body{
     color: white;
     margin-bottom: 0;
     text-transform: uppercase;
+
 }
 
 .box form div{
     position: relative;
+    text-align : center;
+
 }
 
 .box form div label{

@@ -23,29 +23,24 @@
 
 <div class="container">
     <div class="header">
-        <h1><a href="/">운동의 민족</a></h1>
-
+        <h1><a href="#link_header">운동의 민족</a></h1>
         <div class="nav">
-
-             {% if g.user %}
-        <ul class="navbar-nav">
-              <li><a href="#">Training</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="/input">MyPage</a></li>
-            <li class="nav-item ">
-                <a class="nav-link" href="{{ url_for('main.logout') }}">{{ g.user.username }} logout</a>
-            </li>
-
-
-        </ul>
-        {% else %}
-            <ul>
-
+            {% if g.user %}
+            <ul class="navbar-nav">
                 <li><a href="#">Training</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="/input">MyPage</a></li>
-                <li><a href="/login">login</a></li>
-                <li><a href=/signup>Sign Up</a></li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="{{ url_for('main.logout') }}">{{ g.user.user_name }} (Loginout)</a>
+                </li>
+            </ul>
+            {% else %}
+            <ul>
+                <li><a href="#">Training</a></li>
+                <li><a href="/ranking">Community</a></li>
+                <li><a href="/input">MyPage</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href=/signup>SignUp</a></li>
             </ul>
             {% endif %}
         </div>
@@ -53,7 +48,7 @@
     <div class="action" id="link_header">
         <h2>Ready, Action,<br/>Exercise</h2>
         <button>
-            <a href="/login"><b>시작하기</b></a>
+            <a href="/login" target="_self"><b>시작하기</b></a>
         </button>
     </div>
 
@@ -130,18 +125,13 @@
     <div class="img2">
         <div class="txt-ani">
             <h3>바쁜 현대사회, 쉽고 간편하게 1:1 홈트레이닝 즐기기!</h3>
-
             <p>
                 요가, 필라테스, 러닝... 세상에는 너무 많은 운동이 있고 '나한테
                 필요한 운동이 뭘까?' 고민하기에 우리는 너무 바쁘죠! 수 백 가지 동작,
                 300만장 이상의 이미지를 학습한 AI가 당신만을 위한 맨몸 운동
                 프로그램과 올바른 운동 자세를 알려줍니다. 운동은 AI에게 맡기고,
                 당신은 흐르는 땀을 닦기만 하세요.
-                
-
             </p>
-
-
         </div>
         <div id="lottiebox2">
             <div id="lottie2"></div>
@@ -189,18 +179,12 @@
         <div id="lottiebox4">
             <div id="lottie4"></div>
             <script src="{{ url_for('static', filename='lottie.min.js') }}"></script>
-            <script src="{{ url_for('static', filename='custom5.js') }}"></script>
+            <script src="{{ url_for('static', filename='custom4.js') }}"></script>
         </div>
     </div>
 </div>
 <div class="FAQ" id="link_FAQ">
-    <h1>FAQ
-    <div id="lottiebox6">
-            <div id="lottie6"></div>
-            <script src="{{ url_for('static', filename='lottie.min.js') }}"></script>
-            <script src="{{ url_for('static', filename='custom6.js') }}"></script>
-        </div></h1>
-
+    <h1>FAQ</h1>
 
     <ul class="block">
         <li>

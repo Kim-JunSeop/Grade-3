@@ -10,6 +10,30 @@
          <link rel="icon" href="{{url_for('static', filename='favicon (2).ico')}}">
 </head>
 <body>
+    <div class="header">
+        <h1><a href="/">운동의 민족</a></h1>
+        <div class="nav">
+             {% if g.user %}
+				<ul class="navbar-nav">
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="/input">MyPage</a></li>
+					<li class="nav-item ">
+					<a class="nav-link" href="{{ url_for('main.logout') }}">{{ g.user.username }} Loginout</a>
+					</li>
+				</ul>
+			{% else %}
+				<ul>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="/input">MyPage</a></li>
+					<li><a href="/login">Login</a></li>
+					<li><a href=/signup>SignUp</a></li>
+				</ul>
+            {% endif %}
+        </div>
+    </div>
+    <div class="blackinlist"></div>
     <div class="container my-3">
         <table class="table">
             <thead>

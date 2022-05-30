@@ -1,19 +1,28 @@
 from datetime import datetime
 
-from flask import Blueprint , url_for, request, render_template
+from flask import Blueprint , url_for, request, render_template, session, g
 from werkzeug.utils import redirect
 
 from pybo import db
 from pybo.models import Health_Data, Exercise_Data
 from ..forms import InputForm
+from pybo.views.main_views import login_required
 
 bp = Blueprint('list', __name__, url_prefix='/list')
 
 @bp.route('/bodydata/')
+@login_required
 def bodydatalist():
     page = request.args.get('page', type=int, default=1)
-    bodydata_list = Health_Data.query.order_by(Health_Data.create_date.desc())
+    check_user_id = session.get('user_id')
+    if g.user:
+        bodydata_list = Health_Data.query.order_by(Health_Data.create_date.desc()).filter(Health_Data.height != 1,
+                                                                                          Health_Data.user_id == check_user_id)
+    else:
+        bodydata_list = Health_Data.query.filter(Health_Data.weight == 100000)
+    #bodydata_list = Health_Data.query.order_by(Health_Data.create_date.desc()).filter(Health_Data.height!=1)
     bodydata_list = bodydata_list.paginate(page, per_page=10)
+
     return render_template('bodydata_list.html', bodydata_list=bodydata_list)
 
 

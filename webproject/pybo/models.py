@@ -8,7 +8,8 @@ class Health_Data(db.Model):
     body_fat = db.Column(db.Integer, nullable=False)
     body_muscle = db.Column(db.Integer, nullable=False)
     create_date = db.Column(db.DateTime(), nullable=False)
-
+    user_id = db.Column(db.Integer, db.ForeignKey('signup__data.id', ondelete='CASCADE'), nullable=False)
+    user = db.relationship('Signup_Data', backref=db.backref('question_set'))
 
 class Exercise_Data(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -26,4 +27,3 @@ class Signup_Data(db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     address = db.Column(db.String(150), nullable=False)
     phone = db.Column(db.String(150), nullable=False)
-

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Dictionary {
+class Dictionary2 {
     private static String [] kor = { "사랑", "아기", "돈", "미래", "희망" };
     private static String [] eng = { "love", "baby", "money", "future", "hope" };
     public static String kor2Eng(String word) {
@@ -24,7 +24,7 @@ public class DicApp {
             if(word.equals("그만")) {
                 break;
             }
-            String result = Dictionary.kor2Eng(word);
+            String result = Dictionary2.kor2Eng(word);
             if(result==(null))
                 System.out.println(word+"은(는) 저의 사전에 없습니다.");
             else

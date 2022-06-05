@@ -31,7 +31,7 @@ body{
 .box h2{
     margin: 0 0 40px;
     padding: 0;
-    color: skyblue;
+    color: #2AC1BC;
     text-transform: uppercase;
     text-align: center;
 }
@@ -52,7 +52,7 @@ body{
 .box input[type="submit"]{
     border-bottom: none;
     cursor: pointer;
-    background: skyblue;
+    background: #2AC1BC;
     color: white;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -75,12 +75,12 @@ body{
 .box input:valid ~ label{
     top: -12px;
     left:0;
-    color:skyblue;
+    color:#2AC1BC;
     font-size: 12px;
     font-weight: bold;
 }
 
 .box input:focus,
 .box input:valid{
-    border-bottom: 2px solid skyblue;
+    border-bottom: 2px solid #2AC1BC;
 }

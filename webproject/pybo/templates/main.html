@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>운동의 민족</title>
-
+     <link rel="icon" href="{{url_for('static', filename='favicon (2).ico')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
-    <link rel="icon" href="{{url_for('static', filename='favicon (2).ico')}}">
+
 
 
     <script defer src="{{ url_for('static', filename='slide.js') }}"></script>
@@ -26,27 +26,27 @@
         <h1><a href="#link_header">운동의 민족</a></h1>
         <div class="nav">
             {% if g.user %}
-            <ul class="navbar-nav">
-                <li><a href="#">Training</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="/input">MyPage</a></li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ url_for('main.logout') }}">{{ g.user.user_name }} (Loginout)</a>
-                </li>
-            </ul>
-            {% else %}
-            <ul>
-                <li><a href="#">Training</a></li>
-                <li><a href="/ranking">Community</a></li>
-                <li><a href="/input">MyPage</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a href=/signup>SignUp</a></li>
-            </ul>
+				<ul class="navbar-nav">
+					<li><a href="/training/">Training</a></li>
+					<li><a href="/question/list">Community</a></li>
+					<li><a href="/input">MyPage</a></li>
+					<li class="nav-item ">
+					<a class="nav-link" href="{{ url_for('main.logout') }}">{{ g.user.user_name }} (Loginout)</a>
+					</li>
+				</ul>
+			{% else %}
+				<ul>
+					<li><a href="/training/">Training</a></li>
+					<li><a href="/question/list">Community</a></li>
+					<li><a href="/input">MyPage</a></li>
+					<li><a href="/login">Login</a></li>
+					<li><a href=/signup>SignUp</a></li>
+				</ul>
             {% endif %}
         </div>
     </div>
     <div class="action" id="link_header">
-        <h2> Exercise, Diary,<br/> Together!</h2>
+         <h2> Exercise, Diary,<br/> Together!</h2>
         <button>
             <a href="/login" target="_self"><b>시작하기</b></a>
         </button>
@@ -184,7 +184,12 @@
     </div>
 </div>
 <div class="FAQ" id="link_FAQ">
-    <h1>FAQ</h1>
+    <h1>FAQ
+    <div id="lottiebox6">
+            <div id="lottie6"></div>
+            <script src="{{ url_for('static', filename='lottie.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='custom6.js') }}"></script>
+        </div></h1>
 
     <ul class="block">
         <li>

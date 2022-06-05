@@ -33,10 +33,14 @@ def create_app():
 
 
     #블루프린트
-    from .views import main_views, input_views, list_views
+    from .views import main_views, input_views, list_views, question_views, answer_views, comment_views, vote_views
     app.register_blueprint(main_views.bp)
     app.register_blueprint(input_views.bp)
     app.register_blueprint(list_views.bp)
+    app.register_blueprint(question_views.bp)
+    app.register_blueprint(answer_views.bp)
+    app.register_blueprint(comment_views.bp)
+    app.register_blueprint(vote_views.bp)
 
     # 필터
     from .filter import format_datetime

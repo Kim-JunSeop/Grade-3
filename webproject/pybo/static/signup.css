@@ -1,10 +1,3 @@
-/*
-*{
-  list-style: none;
-    padding-left: 0px;
-
-}
-*/
 body{
     font-family: 'MaplestoryOTFLight';
     margin: 0px;
@@ -22,10 +15,10 @@ body{
     }
 
 
-.box {
+.box{
     position: absolute;
     top: 54%;
-    left: 50%;
+    left:50%;
     transform: translate(-50%, -50%);
     width: 500px;
     height: 850px;
@@ -33,12 +26,13 @@ body{
     padding: 40px;
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
+
 .box h2{
-    margin: 0 0 15px;
+    margin: 0 0 40px;
     padding: 0;
-    color: skyblue;
+    color: #2AC1BC;
     text-transform: uppercase;
     text-align: center;
 }
@@ -54,6 +48,43 @@ body{
     border-bottom: 2px solid #999;
 }
 
+
+
+.box input[type="submit"]{
+    border-bottom: none;
+    cursor: pointer;
+    background: #2AC1BC;
+    color: white;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.box form div{
+    position: relative;
+}
+
+.box form div label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.box input:focus ~ label,
+.box input:valid ~ label{
+    top: -12px;
+    left:0;
+    color:#2AC1BC;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.box input:focus,
+.box input:valid{
+    border-bottom: 2px solid #2AC1BC;
+}
 .header {
   width: 100%;
   height: 60px;
@@ -74,8 +105,6 @@ body{
 .header a:hover {
   color: black;
 }
-
-/*nav 부분*/
 .nav {
   padding-right: 413px;
 }
@@ -89,41 +118,4 @@ body{
 }
 .nav ul li a:hover {
   color: black;
-}
-
-.box input[type="submit"]{
-    border-bottom: none;
-    cursor: pointer;
-    background: skyblue;
-    color: white;
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-
-.box form div{
-    position: relative;
-
-}
-
-.box form div label{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    color: #999;
-    transition: .5s;
-    pointer-events: none;
-}
-
-.box input:focus ~ label,
-.box input:valid ~ label{
-    top: -12px;
-    left:0;
-    color:skyblue;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.box input:focus,
-.box input:valid{
-    border-bottom: 2px solid skyblue;
 }

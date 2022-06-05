@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Blueprint, url_for, render_template, flash, request, session, g ,Flask
+from flask import Blueprint, url_for, render_template, flash, request, session, g
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import redirect
 
@@ -10,22 +10,11 @@ from ..forms import UserCreateForm, UserLoginForm
 
 import functools
 
-from msvcrt import getch
-import getpass, sys
-
-
-
-
 bp = Blueprint('main', __name__, url_prefix='/')
 
 @bp.route('/')
 def main():
     return render_template('main.html')
-
-@bp.route('/ranking')
-def ranking():
-    return render_template('ranking.html')
-
 
 @bp.route('/signup', methods=('GET', 'POST'))
 def signup():
@@ -86,3 +75,44 @@ def login_required(view):
             return redirect(url_for('main.login_page', next=_next))
         return view(*args, **kwargs)
     return wrapped_view
+
+## 여기서부터 재영 코드
+@bp.route('/training/')
+def training():
+    return render_template('training_index.html')
+
+@bp.route('/training/1')
+def training1():
+    return render_template('training_1.html')
+
+@bp.route('/training/2')
+def training2():
+    return render_template('training_2.html')
+
+@bp.route('/training/3')
+def training3():
+    return render_template('training_3.html')
+
+@bp.route('/training/4')
+def training4():
+    return render_template('training_4.html')
+
+@bp.route('/training/5')
+def training5():
+    return render_template('training_5.html')
+
+@bp.route('/training/6')
+def training6():
+    return render_template('training_6.html')
+
+@bp.route('/training/7')
+def training7():
+    return render_template('training_7.html')
+
+@bp.route('/training/8')
+def training8():
+    return render_template('training_8.html')
+
+@bp.route('/training/9')
+def training9():
+    return render_template('training_9.html')

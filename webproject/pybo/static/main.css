@@ -38,6 +38,7 @@ body {
   padding-left: 200px;
   position: fixed;
   z-index: 1;
+
 }
 .container .header h1 a {
   text-decoration: none;
@@ -80,7 +81,7 @@ body {
   font-size: 80px;
   margin-bottom: 20px;
 
-  background: linear-gradient(to right top, #861657, #00c0f0);
+  background: linear-gradient(to right top, #861657, #2AC1BC);
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -189,6 +190,22 @@ body {
   transition: transform 1s;
   transform: translate3d(0, 3vw, 0) skewY(15deg);
   transform-origin: left;
+}
+.img2 button {
+  background: none;
+  border: 2px, solid black;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  outline: 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+.img2 button:hover {
+  background-color: #2ac1bc;
 }
 
 .jhs-appear.jhs-appear-active > .img2 .txt-ani p {
@@ -465,6 +482,14 @@ body {
   padding-left: 40px;
   height: 500px;
 }
+.img5 > #lottiebox6 {
+  width: 1000px;
+  height: 100%;
+}
+#lottie6 {
+  width: 680px;
+  margin-left: 180px;
+}
 .FAQ > h1 {
   padding-top: 50px;
   color: black;
@@ -600,13 +625,13 @@ body {
 }
 
 .slide01 {
-  background: #ddbdff;
+  background: #9933ff;
 }
 .slide02 {
-  background: #9fd6c2;
+  background: skyblue;
 }
 .slide03 {
-  background: #abe2f7;
+  background: #009966;
 }
 
 .slide_btn_box > button {

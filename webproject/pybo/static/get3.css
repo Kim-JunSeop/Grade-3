@@ -71,7 +71,9 @@ body{
     transition: .5s;
     pointer-events: none;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .box input:focus ~ label,
 .box input:valid ~ label{
     top: -12px;
